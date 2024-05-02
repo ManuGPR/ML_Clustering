@@ -84,13 +84,3 @@ class MyK_Means:
       if not self.clusters[i].equals(self.past_clusters[i]):
         return False
     return True
-
-"""a = MyK_Means(3, stars.iloc[0:, 0:2])
-print("iteraciones: ", a.fit())
-
-plt.scatter(a.clusters[0].iloc[0: , 0], a.clusters[0].iloc[0:, 1], color="yellow", label="datos")
-plt.scatter(a.clusters[1].iloc[0: , 0], a.clusters[1].iloc[0:, 1], color="blue", label="datos")
-plt.scatter(a.clusters[2].iloc[0: , 0], a.clusters[2].iloc[0:, 1], color="green", label="datos")
-
-plt.scatter(*zip(*a.centroids), color="red", label="destacados")
-plt.show()"""
